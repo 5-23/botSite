@@ -17,13 +17,11 @@ function frame(){
     }
 
     if (window.scrollY > 500){
+        bot.style.display = `block`
         bot.style.animationDuration = `2s`
         bot.style.animationFillMode = `both`
         bot.style.animationName = `botIn`
-    }else{
-        bot.style.animationDuration = `2s`
-        bot.style.animationFillMode = `both`
-        bot.style.animationName = `botOut`
+
     }
     console.log(window.scrollY)
 
