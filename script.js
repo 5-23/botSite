@@ -15,14 +15,24 @@ function frame(){
         title.style.fontSize = `140px`
         title.style.top = `-2.5%`
     }
-
     if (window.scrollY > 500){
-        bot.style.display = `block`
-        bot.style.animationDuration = `2s`
-        bot.style.animationFillMode = `both`
-        bot.style.animationName = `botIn`
+        if (titleBox.clientWidth < 787){
+            bot.style.display = `block`
+            bot.style.width = `200px`
+            bot.style.animationDuration = `2s`
+            bot.style.animationFillMode = `both`
+            bot.style.animationName = `botIn-M`
 
+        }else{
+            bot.style.display = `block`
+            bot.style.width = `300px`
+            bot.style.animationDuration = `2s`
+            bot.style.animationFillMode = `both`
+            bot.style.animationName = `botIn-C`
+
+        }
     }
+    
     console.log(window.scrollY)
 
     requestAnimationFrame(frame)
