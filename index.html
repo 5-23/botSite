@@ -20,34 +20,37 @@
     <meta property="og:image:width" content = "2048">
     <meta property="og:image:height" content = "1170">
 
+
 </head>
 <body>
-    <div class = "titleBox" id = "titleBox">
-        <div class = "title" id = "title">환영합니다!</div>
-    </div>
-    <div class = "hidden"></div>
-    <div class="server">
-        <div class = "buttonInvite" , onclick = "window.open(`https://discord.gg/w2Fw7UeZmY`)">봇 서버</div>
-        <!-- <img src="src/bot.png" class = "bot" id = "bot"> -->
-    </div>
+    <div class="bar">
+        <div class = "home" onclick="loc(`index.html`)">home</div>
+        <div class="dev" id = "dev" onclick="loc(`dev.html`)">참여자</div>
 
-    <div class="padding"></div>
-
-    <div class = "description">
-        <div class = "buttonInvite" , onclick = "window.open(`https://discord.com/oauth2/authorize?client_id=871348411356545057&permissions=8&scope=bot%20applications.commands`)">봇 초대</div>
-        <img src="src/bot.png" class = "bot" id = "bot">
-    </div>
-    <div class = "end">
-        <section class = "team">팀 {objective}</section>
-        <section>대표 SCRATCHER 5-23♪ | <a href="https://discord.com/users/577266050769485844">디스코드</a></section>
-        <div class="line"></div>
-        <div>
-            <a href="https://github.com/5-23/5-23bot/blob/main/info/update.md">업데이트</a>
+        <div class = "menu" id = "menu" onclick="showMenu(true)">
+            <span id = "top"></span>
+            <span id = "middle"></span>
+            <span id = "bottom"></span>
         </div>
     </div>
 
+    <div class="bot" id = "bot"></div>
+    <div class="description" id = "description">
+        누구나 쉽게 사용할수있는
+        <a class = "aa">5-23봇</a> 입니다!
+    </div>
+
+    <div class = "buttonInvite" id = "buttonInvite" onclick = "window.open(`https://discord.com/oauth2/authorize?client_id=871348411356545057&permissions=8&scope=bot%20applications.commands`)">봇 초대</div>
+
+    <!-- <div class="activity">
+        <img src = https://koreanbots.dev/api/widget/bots/servers/871348411356545057.svg?icon=true&scale=3&style=classic>
+        <img src = https://koreanbots.dev/api/widget/bots/votes/871348411356545057.svg?icon=true&scale=3&style=classic>
+        <img src = https://koreanbots.dev/api/widget/bots/status/871348411356545057.svg?icon=true&scale=3&style=classic>
+    </div> -->
+    <div class="menuBox" id = "menuBox">
+        <h1 onclick= "loc(`dev.html`)">참여자.htmk</h1>
+    </div>
+
 </body>
-
-<script src = "script.js"></script>
-
+<script src = "script/index.js"></script>
 </html>
