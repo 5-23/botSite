@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-color: rgb(95, 95, 95);
     user-select: none;
+    text-align: center;
 }
 
 .bar{
@@ -21,93 +22,78 @@ body{
     margin-left : 20px;
     margin-top: -0.5px;
 
-    animation-fill-mode: both;
-    animation-duration : 0.1s;
-    animation-name : notHoverText;
+    cursor: pointer;
+    transition: all .30s;
 }
 .home:hover{
-    cursor: pointer;
-    animation-name : hoverText;
+    opacity : 0.5;
 }
 
-.dev{
+.link div{
     position : absolute;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 200;
     color : rgb(255, 255, 255);
-    margin-left : 170px;
-    margin-top: 20px;
 
-    animation-fill-mode: both;
-    animation-duration : 0.1s;
-    animation-name : notHoverText;
-}
-.dev:hover{
     cursor: pointer;
-    animation-name : hoverText;
+    transition : all .30s;
+}
+.link div:nth-child(1){
+    margin-left : 170px;
+    margin-top: 30px;
+}
+.link div:nth-child(2){
+    margin-left : 240px;
+    margin-top: 30px;
+}
+.link div:hover{
+    opacity : 0.5;
 }
 
 .menu{
-    position: relative;
-    display: none;
-}
-
-.menu + label{
-    height : 30px;
-    top : 15px;
-    margin-right: 80px;
-    text-align: right;
-}
-
-.menu + label span{
-    position : absolute;
-
+    position : relative;
     width : 55px;
-    height: 8px;
+    height: 30px;
+    border-radius: 10px;
+    background-color :rgb(255, 255, 255 , 0);
+
+    float: right;
+    margin-right : 55px;
+    top : 15px;
+    cursor : pointer;
+}
+
+.menu span{
+    position : absolute;
+    width : 55px;
+    height : 10px;
     border-radius: 10px;
     background-color :rgb(255, 255, 255);
+    transition: all .35s;
+
 }
-.menu + label span:nth-child(1){
-    top : 0%;
-    rotate:180deg;
+.menu span:nth-child(1){
+    top: 0%;
 }
-.menu + label span:nth-child(2){
-    top : 50%;
+.menu span:nth-child(2){
+    top: 50%;
 }
-.menu + label span:nth-child(3){
-    top : 100%;
-}
-.menu + label span:hover{
-    cursor : pointer
+.menu span:nth-child(3){
+    top: 100%;
 }
 
 .menuBox{
-    position : relative; 
-    width: 95%;
-    height: 600px;
-    top : 30px;
+    position : absolute; 
+    width: 100%;
+    height: 100%;
+    top : 70px;
     margin : 0 auto;
     text-align: center;
     background-color: rgb(172, 172, 172);
-    border-radius: 30px;
 }
 
-.menuBox + h1{
-    margin-top: 50px;
-    font-weight : 300
-}
-
-.list{
-    position : relative; 
-    width: 100%;
-    top : 30px;
-    margin : 0 auto;
-    text-align: center;
-}
-
-.list + h1{
-    margin-top: 50px;
-    font-weight : 300
+.menuBox h1{
+    margin-top: 10px;
 }
 
 .line{
@@ -121,15 +107,14 @@ body{
     margin-bottom: 5px;
 }
 
-
-@keyframes hoverText {
-    to{
-        color : rgb(199, 199, 199);
-    }
+.list h1{
+    color : rgb(216, 216, 216)
+}
+.list span h3{
+    color: rgb(133, 133, 133);
+    transition : all .30s;
 }
 
-@keyframes notHoverText {
-    to{
-        color : rgb(255, 255, 255);
-    }
+.list span h3:hover{
+    color: rgb(206, 206, 206);
 }

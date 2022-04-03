@@ -21,31 +21,34 @@ body{
     margin-left : 20px;
     margin-top: -0.5px;
 
-    animation-fill-mode: both;
-    animation-duration : 0.1s;
-    animation-name : notHoverText;
+    cursor: pointer;
+    transition: all .30s;
 }
 .home:hover{
-    cursor: pointer;
-    animation-name : hoverText;
+    opacity : 0.5;
 }
 
-.dev{
+.link div{
     position : absolute;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 200;
     color : rgb(255, 255, 255);
-    margin-left : 170px;
-    margin-top: 20px;
 
-    animation-fill-mode: both;
-    animation-duration : 0.1s;
-    animation-name : notHoverText;
-}
-.dev:hover{
     cursor: pointer;
-    animation-name : hoverText;
+    transition : all .30s;
 }
+.link div:nth-child(1){
+    margin-left : 170px;
+    margin-top: 30px;
+}
+.link div:nth-child(2){
+    margin-left : 240px;
+    margin-top: 30px;
+}
+.link div:hover{
+    opacity : 0.5;
+}
+
 .menu{
     position : relative;
     width : 55px;
@@ -55,9 +58,7 @@ body{
 
     float: right;
     margin-right : 25px;
-    top : 15px
-}
-.menu:hover{
+    top : 15px;
     cursor : pointer;
 }
 
@@ -90,9 +91,14 @@ body{
     background-color: rgb(172, 172, 172);
 }
 
-.menuBox + h1{
-    margin-top: 50px;
-    font-weight : 300
+.menuBox h1{
+    margin-top: 10px;
+    cursor : pointer;
+    opacity : 1;
+    transition: all .5s;
+}
+.menuBox h1:hover{
+    opacity : 0.50;
 }
 
 .line{
@@ -148,41 +154,12 @@ body{
     font-size : 50px;
     text-align: center;
 
-    /* transition : all .35; */
-    /* background-color: rgb(122, 122, 122); */
-    animation-fill-mode: both;
-    animation-duration: 0.1s;
-    animation-name: off;
+    transition : all .35s;
+    background-color: rgb(122, 122, 122);
 
     margin : 0 auto;
     left: 0%;
 }
 .buttonInvite:hover{
-    /* background-color: rgb(80, 80, 80); */
-    animation-name: on;
-    cursor : pointer;
-}
-
-@keyframes hoverText {
-    to{
-        color : rgb(199, 199, 199);
-    }
-}
-
-@keyframes notHoverText {
-    to{
-        color : rgb(255, 255, 255);
-    }
-}
-
-@keyframes on {
-    to{
-        background-color: rgb(80, 80, 80);
-    }
-}
-
-@keyframes off {
-    to{
-        background-color: rgb(122, 122, 122);
-    }
+    background-color: rgb(80, 80, 80);
 }

@@ -1,5 +1,5 @@
 let menu = document.getElementById("menu")
-let dev = document.getElementById("dev") 
+let link = document.getElementById("link")
 
 let check = document.getElementById("menuLink")
 let menuBox = document.getElementById("menuBox")
@@ -13,10 +13,10 @@ function frame(){
     menuBox.style.height = `100%`;
     if (window.innerWidth <= 960){
         menu.style.display = `block`
-        dev.style.display = `none`
+        link.style.display = `none`
     }else{
         menu.style.display = `none`
-        dev.style.display = `block`
+        link.style.display = `block`
     }
     requestAnimationFrame(frame)
 }

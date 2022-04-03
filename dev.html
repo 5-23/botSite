@@ -6,37 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="ByFSO7V9F-_RKyQUAHt-zSU3CAqvLCVypwxTV3vzgrs" />
 
-    <title>5-23봇</title>
-    <link rel="stylesheet" href="style/dev.css">
+    <title>개발자</title>
+    <link rel="stylesheet" href="style/index.css">
+
+    <meta name="theme-color" content="#d1d1d1">
+    <meta name="msapplication-TileColor" content="#d1d1d1">
+    <meta name="msapplication-navbutton-color" content="#d1d1d1">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content = "{objective}">
-    <meta property="og:description" content = "{objective}라는팀의 정보를 보여줍니다">
-    <meta property="og:site_name" content = "{objective}">
+    <meta property="og:site_name" content = "개발자">
+    <meta property="og:title" content = "5-23봇">
+    
+    <meta property="og:description" content = "5-23봇에 정보를 보여줍니다.">
     <link rel = "icon" href = "https://github.com/5-23/botSite/blob/main/src/bot.png?raw=true">
 
     <meta name="twitter:card" content = "summary_large_image">
-    <meta property="og:image" content = "https://github.com/5-23/botSite/blob/main/src/main.png?raw=true">
-    <meta property="og:image:width" content = "2048">
-    <meta property="og:image:height" content = "1170">
-
+    <meta property="og:image" content = "https://github.com/5-23/botSite/blob/main/src/main.jpg?raw=true">
+    <meta property="og:image:width" content = "1920">
+    <meta property="og:image:height" content = "1080">
 
 </head>
 <body>
     <div class="bar">
-        <div class = "home" onclick="loc(`index.html`)">home</div>
-        <div class="dev" id = "dev" onclick="loc(`dev.html`)">developer</div>
+        <div class = "home" onclick="loc(`https://5-23.cf`)">home</div>
+        <div class="link" id="link">
+            <div onclick="loc(`dev`)">참여자</div>
+            <div onclick= "window.open(`https://discord.com/invite/w2Fw7UeZmY`)">디스코드</div>
+        </div>
 
-        <input type="checkbox" class="menu" id = "menuLink">
-        <label for = "menuLink" class="menu" id = "menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-    </div>
-    <div class="menuBox" id = "menuBox">
-        <h1 onclick= "loc(`dev.html`)">개발자</h1>
-        
+        <div class = "menu" id = "menu" onclick="showMenu()">
+            <span id = "top"></span>
+            <span id = "middle"></span>
+            <span id = "bottom"></span>
+        </div>
     </div>
 
     <div class="list" id = "list">
@@ -53,9 +55,17 @@
             <h3>쿠키#3681</h3>
             <h3>준작가#3406</h3>
         </span>
-        
+        <h1>도움</h1>
+        <span class = "line"></span>
+        <span>
+            <h3>Eminem#2541</h3>
+            <h3>어피치#3485</h3>
+        </span>
     </div>
-        
+
+    <div class="menuBox" id = "menuBox">
+        <h1 onclick= "loc(`dev.html`)">참여자</h1>
+    </div>
 
 </body>
 <script src = "script/dev.js"></script>
