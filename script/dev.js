@@ -15,9 +15,11 @@ function frame(){
     if (window.innerWidth <= 960){
         menu.style.display = `block`
         link.style.display = `none`
+        document.getElementById("description").style.fontSize = `25px`
     }else{
         menu.style.display = `none`
         link.style.display = `block`
+        document.getElementById("description").style.fontSize = `50px`
     }
     requestAnimationFrame(frame)
 }
@@ -40,5 +42,18 @@ function showMenu(){
     }
 }
 
+function sleep(time){
+    return new Promise(res=>{
+        setTimeout(res , time*1000)
+    })
+}
+
+window.onload = async ()=>{
+    for (i = 0;i<document.getElementsByClassName("line").length;i++){
+        document.getElementsByClassName("line")[i].style.width = `90%`
+        await sleep(0.1)
+    }
+    
+}
 showMenu()
 frame()

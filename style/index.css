@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-color: rgb(95, 95, 95);
     user-select: none;
+    overflow-x: hidden;
 }
 
 .bar{
@@ -28,6 +29,9 @@ body{
     opacity : 0.5;
 }
 
+.link{
+    transition: all 1s;
+}
 .link div{
     position : absolute;
     font-size: 20px;
@@ -60,6 +64,7 @@ body{
     margin-right : 25px;
     top : 25px;
     cursor : pointer;
+    transition : all 1s;
 }
 
 .menu span{
@@ -138,9 +143,8 @@ body{
     margin-bottom: 10px;
 }
 
-.aa{
+.description .white{
     font-weight: 800;
-    color :rgb(255, 255, 255);
 }
 
 .buttonInvite{
@@ -151,15 +155,18 @@ body{
     top : 69%;
     border-radius: 10px;
     user-select: none;
-    font-size : 50px;
     text-align: center;
 
-    transition : all .35s;
     background-color: rgb(122, 122, 122);
 
     margin : 0 auto;
     left: 0%;
 }
+.buttonInvite a{
+    position: relative;
+    top : 4%;
+}
+
 .buttonInvite:hover{
     background-color: rgb(80, 80, 80);
 }

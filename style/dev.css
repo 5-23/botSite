@@ -105,12 +105,13 @@ body{
 .line{
     display: block;
     position: relative;
-    width : 90%;
+    width : 0%;
     height : 1px;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
+    transition : all 1s;
 }
 
 .list{
