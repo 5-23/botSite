@@ -1,7 +1,4 @@
-fetch("https://koreanbots.dev/api/v2/bots/871348411356545057" , {credentials: `include`}).then(req =>{
-    console.log(req)
-})
-
+let bar = document.getElementById("bar")
 let menu = document.getElementById("menu")
 let link = document.getElementById("link")
 
@@ -17,10 +14,32 @@ function loc(href){
     location.href = href
 }
 function frame(){
-    menuBox.style.height = `100%`;
-    if (window.innerWidth <= 960){
+    menuBox.style.height = `100%`
+    if (window.innerWidth <= 360){
         menu.style.display = `block`
         link.style.display = `none`
+        
+        bar.style.height = `70px`
+        menu.style.top = `15px`
+        home.style.top = `-8px`
+
+        description.style.fontSize = `35px`
+
+        bot.style.width = `230px`
+        bot.style.height = `230px`
+        bot.style.backgroundSize = `230px`
+
+        buttonInvite.style.width = `135px`
+        buttonInvite.style.height = `40px`
+        buttonInvite.style.fontSize = `30px`
+        buttonInvite.children[0].style.top = `-1%`
+    }else if (window.innerWidth <= 960){
+        menu.style.display = `block`
+        link.style.display = `none`
+
+        bar.style.height = `90px`
+        menu.style.top = `25px`
+        home.style.top = `0px`
 
         description.style.fontSize = `35px`
 
@@ -37,11 +56,15 @@ function frame(){
         link.style.display = `block`
         description.style.fontSize = `50px`
 
+        bar.style.height = `90px`
+        menu.style.top = `25px`
+        home.style.top = `0px`
+
         bot.style.width = `300px`
         bot.style.height = `300px`
         bot.style.backgroundSize = `300px`
 
-        buttonInvite.style.width = `200px`
+        buttonInvite.style.width = `230px`
         buttonInvite.style.height = `80px`
         buttonInvite.style.fontSize = `50px`
         buttonInvite.children[0].style.top = `4%`
@@ -73,10 +96,15 @@ function sleep(time){
 }
 window.onload = async ()=>{
     await sleep(.5)
+    document.getElementsByClassName("white")[0].style.transition = `all .35s`
     document.getElementsByClassName("white")[0].style.color = `rgb(255, 255, 255)`
     buttonInvite.style.transition = `all .35s`
+    console.log(buttonInvite.children[0])
     bot.style.transition = `all .35s`
     description.style.transition = `all .35s`
+    bar.style.transition = `all 1s`
+    menu.style.transition = `all 1s`
+    home.style.transition = `all 1s`
 
 }
 

@@ -1,7 +1,7 @@
+let bar = document.getElementById("bar")
 let menu = document.getElementById("menu")
 let link = document.getElementById("link") 
 
-let check = document.getElementById("menuLink")
 let menuBox = document.getElementById("menuBox")
 let list = document.getElementById("list")
 
@@ -11,16 +11,39 @@ function loc(href){
     location.href = href
 }
 function frame(){
-    menuBox.style.height = `100%`;
-    if (window.innerWidth <= 960){
+    if (window.innerWidth <= 360){
         menu.style.display = `block`
         link.style.display = `none`
-        document.getElementById("description").style.fontSize = `25px`
+        
+        bar.style.height = `70px`
+        menu.style.top = `15px`
+        home.style.top = `-8px`
+    }else if (window.innerWidth <= 960){
+        menu.style.display = `block`
+        link.style.display = `none`
+
+        bar.style.height = `90px`
+        menu.style.top = `25px`
+        home.style.top = `0px`
+
     }else{
         menu.style.display = `none`
         link.style.display = `block`
-        document.getElementById("description").style.fontSize = `50px`
+
+        bar.style.height = `90px`
+        menu.style.top = `25px`
+        home.style.top = `0px`
     }
+    menuBox.style.height = `100%`;
+    // if (window.innerWidth <= 960){
+    //     menu.style.display = `block`
+    //     link.style.display = `none`
+    //     document.getElementById("description").style.fontSize = `25px`
+    // }else{
+    //     menu.style.display = `none`
+    //     link.style.display = `block`
+    //     document.getElementById("description").style.fontSize = `50px`
+    // }
     requestAnimationFrame(frame)
 }
 

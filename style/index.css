@@ -23,7 +23,6 @@ body{
     margin-top: 0.5px;
 
     cursor: pointer;
-    transition: all .30s;
 }
 .home:hover{
     opacity : 0.5;
@@ -64,7 +63,6 @@ body{
     margin-right : 25px;
     top : 25px;
     cursor : pointer;
-    transition : all 1s;
 }
 
 .menu span{
@@ -155,16 +153,25 @@ body{
     top : 69%;
     border-radius: 10px;
     user-select: none;
-    text-align: center;
+    text-align: left;
 
     background-color: rgb(122, 122, 122);
+    color: rgb(255, 255, 255);
 
     margin : 0 auto;
     left: 0%;
+
+    background-image: url("https://github.com/5-23/botSite/blob/main/src/openURL.png?raw=true");
+    background-repeat: no-repeat;
+    background-size : 25%;
+    background-position-y: center;
+    background-position-x: right;
 }
+
 .buttonInvite a{
     position: relative;
     top : 4%;
+    
 }
 
 .buttonInvite:hover{
