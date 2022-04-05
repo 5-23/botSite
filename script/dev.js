@@ -11,7 +11,7 @@ function loc(href){
     location.href = href
 }
 function frame(){
-    if (window.innerWidth <= 360){
+    if (window.innerWidth <= 760){
         menu.style.display = `block`
         link.style.display = `none`
         
