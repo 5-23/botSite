@@ -35,7 +35,7 @@ function frame(){
         buttonInvite.style.width = `135px`
         buttonInvite.style.height = `40px`
         buttonInvite.style.fontSize = `30px`
-        buttonInvite.children[0].style.top = `-1%`
+        buttonInvite.children[0].style.top = `-3px`
     }else if (window.innerWidth <= 960){
         menu.style.display = `block`
         link.style.display = `none`
@@ -54,7 +54,7 @@ function frame(){
         buttonInvite.style.width = `180px`
         buttonInvite.style.height = `60px`
         buttonInvite.style.fontSize = `40px`
-        buttonInvite.children[0].style.top = `-1%`
+        buttonInvite.children[0].style.top = `-1px`
     }else{
         menu.style.display = `none`
         link.style.display = `block`
@@ -72,7 +72,7 @@ function frame(){
         buttonInvite.style.width = `230px`
         buttonInvite.style.height = `80px`
         buttonInvite.style.fontSize = `50px`
-        buttonInvite.children[0].style.top = `4%`
+        buttonInvite.children[0].style.top = `3.5px`
     }
     requestAnimationFrame(frame)
 }
