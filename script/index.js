@@ -9,6 +9,8 @@ let show = false
 let bot = document.getElementById("bot")
 let description = document.getElementById("description")
 let buttonInvite = document.getElementById("buttonInvite")
+let home = document.getElementById("home")
+
 
 function loc(href){
     location.href = href
@@ -21,6 +23,7 @@ function frame(){
         
         bar.style.height = `70px`
         menu.style.top = `15px`
+        menuBox.style.top = `70px`
         home.style.top = `-8px`
 
         description.style.fontSize = `35px`
@@ -39,6 +42,7 @@ function frame(){
 
         bar.style.height = `90px`
         menu.style.top = `25px`
+        menuBox.style.top = `90px`
         home.style.top = `0px`
 
         description.style.fontSize = `35px`
@@ -58,6 +62,7 @@ function frame(){
 
         bar.style.height = `90px`
         menu.style.top = `25px`
+        menuBox.style.top = `90px`
         home.style.top = `0px`
 
         bot.style.width = `300px`
@@ -105,6 +110,7 @@ window.onload = async ()=>{
     bar.style.transition = `all 1s`
     menu.style.transition = `all 1s`
     home.style.transition = `all 1s`
+    menuBox.style.transition = `all 1s`
 
 }
 
